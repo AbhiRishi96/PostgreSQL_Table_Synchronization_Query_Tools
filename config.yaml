@@ -1,0 +1,28 @@
+database:
+  host: ''
+  name: ''
+  user: ''
+  password: ''
+  min_connections: 2
+  max_connections: 32  # Adjust based on your needs
+
+schema:
+  schema_name: ''
+  main_table: ''
+  stage_table: ''
+  history_table: ''
+
+sync:
+  batch_size: 60000
+
+logging:
+  level: 'INFO'
+  format: '%(asctime)s - %(levelname)s - %(message)s'
+
+view:
+  view_name: 'view'
+  query: |
+          
+query:
+  sql: |
+    SELECT * FROM table
